@@ -1,0 +1,20 @@
+.portfolio {
+    /* background-color: #333; */
+    align-items: top;
+    padding: 2rem;
+  }
+
+    .portfolio h1 {
+        color:khaki;
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
+
+    .portfolio p {
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 300;
+        margin-bottom: 1rem;
+    }
+  

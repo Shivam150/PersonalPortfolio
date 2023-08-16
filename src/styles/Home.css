@@ -1,0 +1,51 @@
+.home {
+    /* background-color: #333; */
+    align-items: top;
+    padding: 5rem; 
+}
+
+.home h1 {
+        color:khaki;
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+}
+
+.home p {
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 300;
+        margin-bottom: 1rem;
+}
+
+/* set image border as khaki color and Name as also khaki */
+.img{
+    
+    background-image: url('../images/MyProfile.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    object-fit: cover;
+    border:3px solid khaki!important;
+    box-shadow: rgba(9, 30, 66,.2) 0px 8px 24px -
+    6px inset,-rgba(9, 30, 66,.17) 0px 1px 3px,
+    rgba(9, 30, 66,.15) 0px 2px 6px;
+    transition: all ease-in-out  0.3s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    z-index: 1;
+    display: block;
+    max-width: 200px;
+    min-height:250px;
+    overflow: hidden;}
+    img::after {
+        content:'';
+        opacity: 0;
+        visibility:hidden;
+        transform: scale(.8);
+        background:#fafbfc;
+        top:-1em;left:-1em;right:-1em; bottom:-1em;
+        position:absolute;z-index:-1;border-radius:calc((var(--border-radius)*2));
+        filter: blur( calc(((var(--blur))* var(--blur)) * (var(--blur))) );
+        animation: glowing 1s linear infinite alternate;
+    }
