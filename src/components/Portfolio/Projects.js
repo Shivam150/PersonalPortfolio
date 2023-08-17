@@ -1,10 +1,12 @@
 import React from "react";
-
+// import Card from "../Cards/Card";
+import CardList from "../Cards/CardList";
+import { cardInfo } from "../../Cardinfo";
 function Projects() {
     return (
         <section className="projects">
         <div>
-            <p>Projects</p>
+         <CardList cardList={cardInfo} />
         </div>
         </section>
     );
