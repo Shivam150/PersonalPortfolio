@@ -7,6 +7,7 @@ import Portfolio from './components/Portfolio/Portfolio';
 import Contact from './components/Contacts/Contact';
 import Footer from "./components/Footer/Footer";
 import Projects from './components/Portfolio/Projects';
+import Skills from './components/Portfolio/Skills';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" exact element={<Home title="Home" />} />
         <Route path="/portfolio" element={<Portfolio title="Portfolio" />} />
         <Route path='projects' element = {<Projects title= "Projects" />} />
+        <Route path='skills' element = {<Skills title = "Skills" />} />
         <Route path="/about" element={<About title="About" />} />
         <Route path="/contact" element={<Contact title="Contact" />} />
       </Routes>

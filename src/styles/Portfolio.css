@@ -36,8 +36,9 @@
         display: block;
         max-width: 200px;
         min-height:250px;
-        overflow: hidden;}
-        img::after {
+        overflow: hidden;
+    }
+ img::after {
             content:'';
             opacity: 0;
             visibility:hidden;
@@ -47,7 +48,11 @@
             position:absolute;z-index:-1;border-radius:calc((var(--border-radius)*2));
             filter: blur( calc(((var(--blur))* var(--blur)) * (var(--blur))) );
             animation: glowing 1s linear infinite alternate;
-        }
+}
 
+.card  {
+    /* create mergin */
+    margin: 50px 5px 70px 8px;
+}
         
   

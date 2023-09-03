@@ -12,12 +12,15 @@ function Home() {
       const now = new Date();
       const currentHour = now.getHours();
 
-      if (currentHour >= 5 && currentHour < 12) {
+      if (currentHour >= 4 && currentHour < 12) {
         setGreeting('Good morning');
       } else if (currentHour >= 12 && currentHour < 18) {
         setGreeting('Good afternoon');
-      } else {
+      } else if(currentHour >= 18 && currentHour < 20) {
         setGreeting('Good evening');
+      }
+      else {
+        setGreeting("Good night");
       }
 
       // Format the current time
@@ -42,12 +45,11 @@ function Home() {
   return (
     <section className="home">
       <div>
-        {/* <div className='img'><img src='../../images/MyProfile.png' alt="" /></div> */}
         <h1>{greeting} everyone</h1>
         <p>I am Shivam Singh</p>
       </div>
       <div className='position'>
-        <Type />
+         <Type />
       </div>
       <div>
         <p>Time: {currentTime}</p>

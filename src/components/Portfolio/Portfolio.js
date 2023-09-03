@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../styles/Portfolio.css';
 import Projects from './Projects';
+import Skills from './Skills';
 import { Link } from 'react-router-dom';
 function Portfolio() {
   return (
@@ -9,15 +10,27 @@ function Portfolio() {
         <h1>SHIVAM SINGH</h1>
         <div className='img'><img src='../../images/MyProfile.png' alt="" /></div>
       </div>
-      <div>
+      {/* <div>
         <a href="./assets/<NAME>_Resume_2021.pdf" download><button id="resumeButton">Download Resume</button ></a>
-      </div>
+      </div> */}
       <div className="card">
         <div className="card-info">
         <ul className="">
           <li className="project-item">
             <Link  to="/projects" className="projects-link">
             <h2>{Projects}View My Work</h2>
+            </Link>
+          </li>
+      </ul>
+        </div>
+    </div>
+
+    <div className="card">
+        <div className="card-info">
+        <ul className="">
+          <li className="skills-item">
+            <Link  to="/skills" className="skills-link">
+            <h2>{Skills}View My Skills</h2>
             </Link>
           </li>
       </ul>

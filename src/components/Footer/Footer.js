@@ -31,7 +31,7 @@ const Footer = () => (
       <div className="footer-text">
         <p>
           Designed and developed by Shivam Singh ||
-          Copyright@2023 CB
+          Copyright@2023 SS
         </p>
       </div>
     </div>
