@@ -21,3 +21,13 @@ export const cardInfo =  [
     }
 
 ]
+
+export const experienceInfo = [
+    {
+        id: "1",
+        title: "Fullstack Blockchain Developer Intern",
+        companyName: "Apptunix Technologies Pvt Ltd",
+        Date: "06/02/2023 to 06/08/2023",
+        companyLocation: "Mohali , Punjab , India"
+    }
+]
