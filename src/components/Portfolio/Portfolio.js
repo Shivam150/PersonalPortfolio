@@ -2,24 +2,26 @@ import React from 'react';
 import '../../styles/Portfolio.css';
 import Projects from './Projects';
 import Skills from './Skills';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import Resume from '../Resume/Resume';
+
+// import { Link } from 'react-router-dom';
 function Portfolio() {
+
+  let history = useNavigate();
   return (
     <section className="portfolio">
       <div>
         <h1>SHIVAM SINGH</h1>
         <div className='img'><img src='../../images/MyProfile.png' alt="" /></div>
       </div>
-      {/* <div>
-        <a href="./assets/<NAME>_Resume_2021.pdf" download><button id="resumeButton">Download Resume</button ></a>
-      </div> */}
       <div className="card">
         <div className="card-info">
         <ul className="">
           <li className="project-item">
-            <Link  to="/projects" className="projects-link">
-            <h2>{Projects}View My Work</h2>
-            </Link>
+             
+            <h2 onClick={() => history('/projects')}>{Projects}View My Work</h2>
+             
           </li>
       </ul>
         </div>
@@ -29,12 +31,23 @@ function Portfolio() {
         <div className="card-info">
         <ul className="">
           <li className="skills-item">
-            <Link  to="/skills" className="skills-link">
-            <h2>{Skills}View My Skills</h2>
-            </Link>
+             
+            <h2 onClick={() => history('/skills')}>{Skills}View My Skills</h2>
+            
           </li>
       </ul>
         </div>
+    </div>
+
+    
+    <div className="resume" >
+      <a href="/Docs/Shivam_Singh_Resume1.0.pdf" target="_blank">
+        <button className='pdf'>{Resume}Resume</button>
+      </a>
+    </div>
+
+    <div>
+
     </div>
 
     </section>

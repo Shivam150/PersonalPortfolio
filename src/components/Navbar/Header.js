@@ -1,40 +1,42 @@
 import React from 'react';
 import '../../styles/Header.css';
-
-// import link from react-dom
-import { Link } from 'react-router-dom';
-
-// import Home from '../Home/Home'
+import {useNavigate } from 'react-router-dom';
 
 function Header() {
+
+  let history= useNavigate();
+
+
   return (
+    <nav>
     <header className="header">
         <nav className="navbar">
         <ul className="navbar-nav">
-          <li className="nav-item">
-            <Link  to="/" className="nav-link">
+          <li className="nav-item" onClick={()=>history("/")}>
+            
               Home
-            </Link>
+            
           </li>
-          <li className="nav-item">
-            <Link to="/portfolio" className="nav-link">
+          <li className="nav-item" onClick={() => history("/portfolio")}>
+
               Portfolio
-            </Link>
+
           </li>
-          <li className="nav-item">
-            <Link to="/about" className="nav-link">
+          <li className="nav-item" onClick={() => history("/about")}>
+            
               About
-            </Link>
           </li>
-          <li className="nav-link-contact">
-            <Link to="/contact" className="nav-link">
+
+          <li className="nav-link-contact" onClick={() => history("/contact")}>
+
               Contact
-            </Link>
+
           </li>
         </ul>
       </nav>
       
     </header>
+    </nav>
   );
 }
 

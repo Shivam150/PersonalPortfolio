@@ -7,7 +7,7 @@ function Projects() {
         <div>
          <CardList cardList={cardInfo} />
         </div>
-        </section>
+         </section>
     );
 }
 

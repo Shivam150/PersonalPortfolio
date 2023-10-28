@@ -1,6 +1,7 @@
 import React from "react";
 import SkillList from "../Cards/SkillList";
-import { skillInfo } from "../../Info/Skillinfo"; // Import skillInfo
+// import CardList f";
+import { skillInfo } from "../../Info/Cardinfo"; // Import skillInfo
 
 function Skills() {
   return (
