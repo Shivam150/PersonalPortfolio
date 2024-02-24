@@ -6,14 +6,14 @@
 
 .home h1 {
         color:khaki;
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 400;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
 }
 
 .home p {
         color: #fff;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         font-weight: 300;
         margin-bottom: 1rem;
 }
@@ -52,4 +52,8 @@
 
 .position {
     color: khaki;
+    text-align: center;
+    padding-top: 2%;
+    font-size: 1.5rem;
+    font-family: 'Raleway', sans-serif;
 }

@@ -2,9 +2,9 @@
 .card-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 2rem;
-  /* margin-top: 2rem; */
+  flex-direction:row;
+  justify-content:center;
+  gap: 1rem;
 }
 
 /* Add any additional styling as needed */

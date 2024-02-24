@@ -13,7 +13,7 @@ function Resume() {
 
   function handleDownloadPDF() {
     // Replace 'your-resume.pdf' with the actual URL or path to your PDF file.
-    const pdfURL = '/Docs/Shivam_Singh_Resume1.0.pdf';
+    const pdfURL =  '../../images/Shivam_Singh_Resume1.0.pdf';
 
     // Create an invisible anchor element to trigger the download.
     const link = document.createElement('a');
@@ -26,7 +26,7 @@ function Resume() {
     <div>
       <h1>Resume</h1>
       <Document
-        file= '/Docs/Shivam_Singh_Resume1.0.pdf'
+        file= '../../images/Shivam_Singh_Resume1.0.pdf'
         onLoadSuccess={onDocumentLoadSuccess}
       >
         <Page pageNumber={pageNumber} />
@@ -40,3 +40,7 @@ function Resume() {
 }
 
 export default Resume;
+
+
+// {`${process.env.BASE_URL}/Shivam_Singh_Resume1.0.pdf`}
+// https://my-react-app.surge.sh

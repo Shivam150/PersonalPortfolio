@@ -1,11 +1,11 @@
 import React from "react";
 import CardList from "../Cards/CardList";
-import { cardInfo } from "../../Info/Cardinfo";
+import { projectInfo } from "../../Info/Cardinfo";
 function Projects() {
     return (
         <section className="projects">
         <div>
-         <CardList cardList={cardInfo} />
+          <CardList cardList={projectInfo} />
         </div>
          </section>
     );

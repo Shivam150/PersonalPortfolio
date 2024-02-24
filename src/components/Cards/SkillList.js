@@ -1,12 +1,12 @@
 import React from 'react';
-import CardTwo from './CardTwo'; // Import the Card component
+import CardThree from './CardThree'; // Import the Card component
 import '../../styles/CardList.css';
 
 const SkillList = ({ skillList }) => {
   return (
     <div className="card-list">
       {skillList.map((skillInfo) => (
-        <CardTwo key={skillInfo.id} skillInfo={skillInfo} />
+        <CardThree key={skillInfo.id} skillInfo={skillInfo} />
       ))}
     </div>
   );

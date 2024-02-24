@@ -27,7 +27,6 @@ function Home() {
       const formattedTime = now.toLocaleTimeString([], {
         hour: '2-digit',
         minute: '2-digit',
-        second: '2-digit'
       });
 
       setCurrentTime(formattedTime);
@@ -43,18 +42,27 @@ function Home() {
   }, []);
 
   return (
+    <>
     <section className="home">
+    <div className='time'>
+        <p>{currentTime}</p>
+    </div>
+
       <div>
-        <h1>{greeting} everyone</h1>
+        <h1>{greeting}</h1>
         <p>I am Shivam Singh</p>
       </div>
+
       <div className='position'>
-         <Type />
+        A <Type />
       </div>
+
       <div>
-        <p>Time: {currentTime}</p>
+        <button>Hire me</button>
       </div>
+      
     </section>
+    </>
   );
 }
 

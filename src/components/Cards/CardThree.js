@@ -1,15 +1,15 @@
 import React from 'react';
 import '../../styles/Card.css';
 
-const Card = ({ cardInfo }) => {
+const CardThree = ({ skillInfo }) => {
   return (
     <div className="card">
       <div className="card-info">
-        <h2>{cardInfo.name}</h2>
-        <p>{cardInfo.description}</p>
+        <h2>{skillInfo.name}</h2>
+        <p>{skillInfo.description}</p>
       </div>
     </div>
   );
 };
 
-export default Card;
+export default CardThree;
